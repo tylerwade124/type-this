@@ -1,7 +1,7 @@
 export default function () {
     return (
         <div>
-            <h2>Type.this</h2>
+            <h2>2022 - Matthew Wade</h2>
         </div>
     )
 }
