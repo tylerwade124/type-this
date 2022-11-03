@@ -1,6 +1,9 @@
 # TypeThis
 A typing game, to practice, and increase your WPM
 
+## API
+
+
 ## WireFrames
 
 #### Home page
