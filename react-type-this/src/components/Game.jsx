@@ -29,7 +29,8 @@ export default function Game () {
         setUserInput(e.target.value)
         const quote = game.en
         const splitArray = quote.split(' ')
-        splitArray.join()
+        
+        // splitArray.join()
 
         for (let i = 0; i < splitArray.length; i++) {
             let word = splitArray[i]
