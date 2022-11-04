@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import '../App.css'
 
 export default function Stopwatch () {
     const [time, setTime] = useState(0);
@@ -19,10 +20,10 @@ export default function Stopwatch () {
         <div className="buttons">
           <button onClick={() => setRunning(true)}>
           <div className="numbers">
-            <h3>Timer</h3>
-            <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
-            <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
-            <span>{("0" + ((time / 10) % 100)).slice(-2)}</span>
+            <h3 className="timer-title">Timer</h3>
+            <span className="timer-text">{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
+            <span className="timer-text">{("0" + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
+            <span className="timer-text">{("0" + ((time / 10) % 100)).slice(-2)}</span>
           </div>
           </button>
           <br/>

@@ -22,8 +22,7 @@ export default function Game () {
 }, [])
 
 
-
-    //if user has not pressed space then don't go to next word
+//if user has not pressed space then don't go to next word
 
 
     const handleChange = (e) => {
