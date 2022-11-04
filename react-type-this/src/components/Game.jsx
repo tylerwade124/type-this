@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import Timer from './Timer'
 
 export default function Game () {
 
@@ -57,6 +58,9 @@ export default function Game () {
 
 
 
+
+
+
     if (!game) {
         return <h1>Loading...</h1>
     } else {
@@ -64,10 +68,7 @@ export default function Game () {
     
         return (
             <div>
-
-
-
-
+                <Timer />
                 <h2>Author: {game.author}</h2>
 
 
@@ -76,15 +77,16 @@ export default function Game () {
                     <h3>{game.en}</h3>
 
                     <input
+                        className="start-button"
+                        type="button"
+                        value="Start"
+                        />
+
+                    <input
                         className="user-input"
                         type="text"
                         value={userInput}
                         onChange={handleChange}
-                        />
-                    <input
-                        className="start-button"
-                        type="button"
-                        value="Start"
                         />
                     
 
