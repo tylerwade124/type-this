@@ -34,7 +34,7 @@ export default function Game () {
 
         for (let i = 0; i < splitArray.length; i++) {
             let word = splitArray[i]
-            if (userInput == splitArray[i]) {
+            if (userInput === splitArray[i]) {
                 console.log(word)
                 setUserInput('')
             }
@@ -43,7 +43,7 @@ export default function Game () {
     }
 
 
-
+//make handle submit stop timer, and display WPM
     const handleSubmit = (e) => {
         e.preventDefault()
             if (userInput === game.en) {
@@ -75,12 +75,6 @@ export default function Game () {
                 <form onSubmit={handleSubmit}>
 
                     <h3>{game.en}</h3>
-
-                    <input
-                        className="start-button"
-                        type="button"
-                        value="Start"
-                        />
 
                     <input
                         className="user-input"

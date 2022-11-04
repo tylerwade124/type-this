@@ -1,56 +1,34 @@
-import { useEffect, useState } from 'react'
+import { useState, useEffect } from 'react'
 
-export default function Timer () {
-
-    const [seconds, setSeconds] = useState(0)
-    const [minutes, setMinutes] = useState(0)
-
-
-    var timer=false
-
+export default function Stopwatch () {
+    const [time, setTime] = useState(0);
+    const [running, setRunning] = useState(false);
     useEffect(() => {
-        timer=setInterval(()=>{
-            setSeconds(seconds+1)
-
-            if(seconds===59) {
-                setMinutes(minutes+1)
-                setSeconds(0)
-            }
-        }, 1000)
-        return ()=> clearInterval(timer)
-
-    })
-
-    const restart=()=>{
-        setSeconds(0)
-        setMinutes(0)
-    }
-
-    const stop = () => {
-        clearInterval(timer)
-        }
-    
-    
-
-
-
-
+      let interval;
+      if (running) {
+        interval = setInterval(() => {
+          setTime((prevTime) => prevTime + 10);
+        }, 10);
+      } else if (!running) {
+        clearInterval(interval);
+      }
+      return () => clearInterval(interval);
+    }, [running]);
     return (
-        <div className="timer">
-            <div className="container">
-                <div className="timer_container">
-
-                    <button 
-                        className="timer-start"
-                        onClick={restart}>
-                    <h1>{minutes<10? ""+minutes: minutes}:{seconds<10? "0"+seconds: seconds}</h1>
-                    </button>
-                    <button onClick={stop}>Stop</button>
-
-
-                </div>
-            </div>
+      <div className="stopwatch">
+        <div className="buttons">
+          <button onClick={() => setRunning(true)}>
+          <div className="numbers">
+            <h3>Timer</h3>
+            <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
+            <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
+            <span>{("0" + ((time / 10) % 100)).slice(-2)}</span>
+          </div>
+          </button>
+          <br/>
+          <button onClick={() => setRunning(false)}>Stop</button>
+          <button onClick={() => setTime(0)}>Reset</button>       
         </div>
-    )
-
-}
+      </div>
+    );
+  };
