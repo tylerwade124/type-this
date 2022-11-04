@@ -3,8 +3,13 @@ import axios from 'axios'
 
 export default function Game () {
 
+
+
         const [game, setGame] = useState({})
         const [userInput, setUserInput] = useState('')
+
+
+
 
 
         useEffect(() => {
@@ -17,49 +22,35 @@ export default function Game () {
 
 
 
-
-
-
-
-
-
-
-
-
+    //if user has not pressed space then don't go to next word
 
 
     const handleChange = (e) => {
         setUserInput(e.target.value)
         const quote = game.en
-        const word = quote.split(' ')[0]
-        
+        const splitArray = quote.split(' ')
+        splitArray.join()
 
+        for (let i = 0; i < splitArray.length; i++) {
+            let word = splitArray[i]
+            if (userInput == splitArray[i]) {
+                console.log(word)
+                setUserInput('')
+            }
 
-        
-        if (userInput == word) {
-            console.log(word)     
         }
- 
-        
-
     }
-
-
-
-
-
-
 
 
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        if (userInput === game.en) {
-            console.log(`SUCCESSFUL`)
-        }
-        if (userInput !== game.en) {
-            console.log(`UNSUCCESSFUL`)
-        }
+            if (userInput === game.en) {
+                console.log(`SUCCESSFUL`)
+            }
+            if (userInput !== game.en) {
+                console.log(`UNSUCCESSFUL`)
+            }
         console.log(game)
     }
 
@@ -78,25 +69,28 @@ export default function Game () {
 
 
                 <h2>Author: {game.author}</h2>
-                <h3>
-                        {game.en}
-                </h3>
+
 
                 <form onSubmit={handleSubmit}>
+
+                    <h3>{game.en}</h3>
 
                     <input
                         className="user-input"
                         type="text"
                         value={userInput}
-                        placeholder={game.en}
                         onChange={handleChange}
                         />
+                    <input
+                        className="start-button"
+                        type="button"
+                        value="Start"
+                        />
+                    
 
                 </form>
                
                 
-
-                 <p className="written">{userInput}</p>
 
    
             </div>
