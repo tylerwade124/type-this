@@ -2,12 +2,15 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Timer from './Timer'
 import useTypingGame from 'react-typing-game-hook'
+import typingSound from './sound/button.wav'
+import resetSound from './sound/beep.wav'
 
-export default function Game () {
+export default function Game (props) {
 
         const [game, setGame] = useState({})
 
         const text = game.en
+
 
         const {
             states: { chars, charsState },
@@ -22,6 +25,17 @@ export default function Game () {
         getData()
 }, [])
 
+        // const splitText = text.split(' ')
+
+
+
+        const audio = new Audio(typingSound)
+        audio.loop = false
+        audio.volume = 0.4
+
+        const audio2 = new Audio(resetSound)
+        audio2.loop = false
+        audio2.volume = 0.25
 
 
     if (!game) {
@@ -37,11 +51,15 @@ export default function Game () {
                 onKeyDown={e => {
                     const key = e.key;
                     if (key === 'Escape') {
-                    resetTyping();
+                    resetTyping()
+                    audio2.play()
                     } else if (key === 'Backspace') {
-                    deleteTyping(false);
+                    deleteTyping(false)
+                    audio.play()
                     } else if (key.length === 1) {
                     insertTyping(key);
+                    audio.play()
+
                     }
                     e.preventDefault();
                 }}

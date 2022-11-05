@@ -28,22 +28,28 @@ button {
   background-color: rgb(122, 120, 120);
 }
 
-.numbers {
-  background-color: rgb(122, 120, 120);
-}
-
 .timer-title { 
-  background-color: rgb(122, 120, 120);
   font-size: 30px;
 }
 
 .nav {
-  font-size: 40px;
+  font-size: 30px;
+  display: flex;
+  align-self: center;
 }
 
 .words {
   font-family: 'Courier Prime', monospace;
+  padding-top: 90px;
 }
+
+.title {
+  font-size: 50px;
+  display: flex;
+}
+
+
+
 
 
 
