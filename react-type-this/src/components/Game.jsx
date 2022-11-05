@@ -1,17 +1,18 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Timer from './Timer'
+import useTypingGame from 'react-typing-game-hook'
 
 export default function Game () {
 
-
-
         const [game, setGame] = useState({})
-        const [userInput, setUserInput] = useState('')
 
+        const text = game.en
 
-
-
+        const {
+            states: { chars, charsState },
+            actions: { insertTyping, resetTyping, deleteTyping },
+          } = useTypingGame(text);
 
         useEffect(() => {
             const getData = async() => {
@@ -22,44 +23,6 @@ export default function Game () {
 }, [])
 
 
-//if user has not pressed space then don't go to next word
-
-
-    const handleChange = (e) => {
-        setUserInput(e.target.value)
-        const quote = game.en
-        const splitArray = quote.split(' ')
-        
-        // splitArray.join()
-
-        for (let i = 0; i < splitArray.length; i++) {
-            let word = splitArray[i]
-            if (userInput === splitArray[i]) {
-                console.log(word)
-                setUserInput('')
-            }
-
-        }
-    }
-
-
-//make handle submit stop timer, and display WPM
-    const handleSubmit = (e) => {
-        e.preventDefault()
-            if (userInput === game.en) {
-                console.log(`SUCCESSFUL`)
-            }
-            if (userInput !== game.en) {
-                console.log(`UNSUCCESSFUL`)
-            }
-        console.log(game)
-    }
-
-
-
-
-
-
 
     if (!game) {
         return <h1>Loading...</h1>
@@ -67,31 +30,35 @@ export default function Game () {
 
     
         return (
-            <div>
+            <div className="quote">
                 <Timer />
-                <h2>Author: {game.author}</h2>
-
-
-                <form onSubmit={handleSubmit}>
-
-                    <h3>{game.en}</h3>
-
-                    <input
-                        className="user-input"
-                        type="text"
-                        value={userInput}
-                        onChange={handleChange}
-                        />
-                    
-
-                </form>
-               
-                
-
-   
+                <h1
+                className="words"
+                onKeyDown={e => {
+                    const key = e.key;
+                    if (key === 'Escape') {
+                    resetTyping();
+                    } else if (key === 'Backspace') {
+                    deleteTyping(false);
+                    } else if (key.length === 1) {
+                    insertTyping(key);
+                    }
+                    e.preventDefault();
+                }}
+                tabIndex={0}
+                >
+                {chars.split('').map((char, index) => {
+                    let state = charsState[index];
+                    let color = state === 0 ? 'Azure' : state === 1 ? 'green' : 'red';
+                    return (
+                    <span key={char + index} style={{ color }}>
+                        {char}
+                    </span>
+                    );
+                })}
+                </h1>
             </div>
-        )
-
-    }
+          );
+        };
 
 }
