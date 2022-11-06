@@ -1,5 +1,5 @@
 * {
-  background-color: rgb(38, 37, 37);
+  background-color: black;
   color: lightgrey;
   margin: 0 auto;
   padding: 0;
@@ -40,9 +40,11 @@ button {
 
 .words {
   font-family: 'Courier Prime', monospace;
-  padding-top: 90px;
-  padding-left: 300px;
-  padding-right: 300px;
+  font-size: 43px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
 }
 
 .title {
@@ -51,13 +53,196 @@ button {
 }
 
 .author {
-  color: grey;
-  padding-bottom: 200px
+  color: White;
+  font-size: 25px;
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -88%)
 }
 
-header {
-  background-color: darkgrey;
+
+
+
+
+
+
+
+
+
+body {
+  font-family: 'Courier Prime', monospace;
+  min-height: 100vh;
 }
+
+.description {
+  background-color: black;
+  position: relative;
+  font-family: 'Courier Prime', monospace;
+  font-size: clamp(1rem, 2vw + 1rem, 4rem);
+  width: max-content;
+  color: rgb(7, 220, 7);
+}
+
+.description::before,
+.description::after {
+  background-color: black;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.description::before {
+  background-color: black;
+  animation: 
+  typewriter 6s steps(45) forwards;
+}
+
+.description::after {
+  width: .125em;
+  background: white;
+  animation: 
+  typewriter 6s steps(45) forwards;
+}
+
+@keyframes typewriter {
+  to { 
+    left: 100% 
+  }
+}
+
+
+
+
+
+
+.description2 {
+  background-color: black;
+  position: relative;
+  font-family: 'Courier Prime', monospace;
+  font-size: clamp(1rem, 2vw + 1rem, 4rem);
+  width: max-content;
+  color: rgb(7, 220, 7);
+  right: 1%;
+}
+
+.description2::before,
+.description2::after {
+  background-color: black;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.description2::before {
+  background-color: black;
+  animation: 
+  typewriter 6s steps(44) forwards;
+  animation-delay: 6s;
+}
+
+.description2::after {
+  width: .125em;
+  background: white;
+  animation: 
+  typewriter 6s steps(44) forwards;
+  animation-delay: 6s;
+}
+
+@keyframes typewriter {
+  to { 
+    left: 100% 
+  }
+}
+
+
+
+
+
+
+
+
+.description3 {
+  background-color: black;
+  position: relative;
+  font-family: 'Courier Prime', monospace;
+  font-size: clamp(1rem, 2vw + 1rem, 4rem);
+  width: max-content;
+  color: rgb(7, 220, 7);
+  right: 27.7%;
+}
+
+.description3::before,
+.description3::after {
+  background-color: black;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.description3::before {
+  background-color: black;
+  animation: 
+  typewriter 3s steps(20) forwards;
+  animation-delay: 12s;
+}
+
+.description3::after {
+  width: .125em;
+  background: white;
+  animation: 
+  typewriter 3s steps(20) forwards;
+  animation-delay: 12s;
+}
+
+@keyframes typewriter {
+  to { 
+    left: 100% 
+  }
+}
+
+.typewriter-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 8px;
+  right: 44%;
+}
+
+.rules {
+  position: absolute;
+  list-style: none;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -15%)
+}
+
+.game-nav {
+  font-size: 60px;
+}
+
+
+
+
+
+
+
+
+
 
 
 

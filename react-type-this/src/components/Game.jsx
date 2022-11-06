@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
 // import Timer from './Timer'
 import useTypingGame from 'react-typing-game-hook'
@@ -11,6 +11,7 @@ export default function Game (props) {
         const [game, setGame] = useState({})
 
         const text = game.en
+        
 
 
 
@@ -20,7 +21,11 @@ export default function Game (props) {
         const {
             states: { chars, charsState, errorChar, correctChar, startTime, endTime, currIndex, phase },
             actions: { insertTyping, resetTyping, deleteTyping, endTyping, getDuration, },
-          } = useTypingGame(text);
+          } = useTypingGame(text, {
+            skipCurrentWordOnSpace: false,
+            pauseOnError: false,
+            countErrors: 'everytime'
+          });
 
 
 
@@ -35,6 +40,7 @@ export default function Game (props) {
 }
         getData()
 }, [])
+
 
 
 
@@ -72,10 +78,6 @@ export default function Game (props) {
 //1 = correct
 //2 = incorrect
 
-//default values
-//skipCurrentWordOnSpace = true
-//pauseOnError = false
-//countErrors = evertime
 
 
 //MATH
@@ -90,7 +92,6 @@ const adjustedWPM = WPM * (accuracy / 100)
 
 
 
-
     if (!game) {
         return <h1>Loading quote...</h1>
     } else {
@@ -99,8 +100,12 @@ const adjustedWPM = WPM * (accuracy / 100)
         return (
             <div className="quote">
                 {/* <Timer /> */}
-                <p>- Hit enter to submit</p>
-                <p>- Hit escape to restart test</p>
+                <ul className="rules">
+                    <li>Click on the quote to begin</li>
+                    <li>Time begins when first character is typed</li>
+                    <li>Hit escape to restart</li>
+                    <li>Hit enter to submit</li>
+                </ul>
                 <h1
                 className="words" 
                 onKeyDown={e => {
@@ -116,18 +121,29 @@ const adjustedWPM = WPM * (accuracy / 100)
                     } else if (key=== 'Enter') {
                         endTyping()
                         getDuration()
+                        audio2.play()
                         console.log('')
                         console.log(`test phase = ${phase}`)
                         console.log(`Total Characters = ${totalCharTyped}`)
                         console.log(`Correct Characters = ${correctChar}`)
-                        console.log(`${errorChar} error(s)`)
-                        console.log(`minutes = ${minutes}`)
-                        console.log(`seconds = ${seconds}`)
-                        console.log(`Accuracy = ${accuracy}`)
+                        console.log(`ALL errors(includes corrected errors) = ${errorChar}`)
+                        console.log(`elapsed minutes = ${minutes}`)
+                        console.log(`elapsed seconds = ${seconds}`)
+                        console.log(`Accuracy = ${accuracy}%`)
                         console.log(`WPM(not including errors) = ${WPM}`)
-                        console.log(`WPM(including errors) = ${adjustedWPM}`)
+                        console.log(`AWPM(including errors) = ${adjustedWPM}`)
+                        
+                        alert(
+                            `
+                            WPM = ${adjustedWPM}
+                            Accuracy = ${accuracy}%
+                            Elapsed Time = ${seconds} seconds
+                            Correct Characters = ${correctChar} / ${totalCharTyped}
+                            Total Errors (includes corrected errors) = ${errorChar}
+                            `
+                        )
 
-                        // <Results />
+
 
                     } else if (key.length === 1) {
                         insertTyping(key);
@@ -139,7 +155,7 @@ const adjustedWPM = WPM * (accuracy / 100)
                 >
                 {chars.split('').map((char, index) => {
                     let state = charsState[index];
-                    let color = state === 0 ? 'white' : state === 1 ? 'green' : 'red';
+                    let color = state === 0 ? 'white' : state === 1 ? 'rgb(7, 220, 7)' : 'red';
                     return (
                     <span key={char + index} style={{ color }}>
                         {char}
