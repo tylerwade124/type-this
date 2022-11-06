@@ -78,6 +78,13 @@ export default function Game (props) {
 //countErrors = evertime
 
 
+//MATH
+const WPM = ((currIndex + 1) / 5) / ((endTime - startTime) / 60000)
+const seconds = (endTime - startTime) / 1000
+const minutes = (endTime - startTime) / 60000
+const totalCharTyped = currIndex + 1
+const accuracy = (correctChar / (currIndex + 1)) * 100
+const adjustedWPM = WPM * (accuracy / 100)
 
 
 
@@ -111,12 +118,14 @@ export default function Game (props) {
                         getDuration()
                         console.log('')
                         console.log(`test phase = ${phase}`)
-                        console.log(`${currIndex + 2} total character's typed`)
-                        console.log(`${(currIndex + 2) - errorChar} correct character's typed`)
+                        console.log(`Total Characters = ${totalCharTyped}`)
+                        console.log(`Correct Characters = ${correctChar}`)
                         console.log(`${errorChar} error(s)`)
-                        console.log(`${correctChar} correct characters`)
-                        console.log(`${(endTime - startTime) / 1000} seconds / ${endTime - startTime} milliseconds`)
-                        //console log characters per minute math equation
+                        console.log(`minutes = ${minutes}`)
+                        console.log(`seconds = ${seconds}`)
+                        console.log(`Accuracy = ${accuracy}`)
+                        console.log(`WPM(not including errors) = ${WPM}`)
+                        console.log(`WPM(including errors) = ${adjustedWPM}`)
 
                         // <Results />
 
