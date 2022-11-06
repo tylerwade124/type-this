@@ -48,7 +48,13 @@ button {
   display: flex;
 }
 
+.author {
+  color: white;
+}
 
+header {
+  background-color: darkgrey;
+}
 
 
 
