@@ -41,6 +41,8 @@ button {
 .words {
   font-family: 'Courier Prime', monospace;
   padding-top: 90px;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 .title {
@@ -49,7 +51,8 @@ button {
 }
 
 .author {
-  color: white;
+  color: grey;
+  padding-bottom: 200px
 }
 
 header {

@@ -92,6 +92,8 @@ export default function Game (props) {
         return (
             <div className="quote">
                 {/* <Timer /> */}
+                <p>- Hit enter to submit</p>
+                <p>- Hit escape to restart test</p>
                 <h1
                 className="words" 
                 onKeyDown={e => {
@@ -137,6 +139,7 @@ export default function Game (props) {
                 })}
                 </h1>
                 <h3 className="author">- {game.author}</h3>
+                
             </div>
           );
         };
