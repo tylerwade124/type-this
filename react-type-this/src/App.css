@@ -226,14 +226,20 @@ body {
 .rules {
   position: absolute;
   list-style: none;
-  top: 15%;
+  top: 13%;
   left: 50%;
-  transform: translate(-50%, -15%)
+  transform: translate(-50%, -13%);
+  font-size: 15px;
 }
 
 .game-nav {
   font-size: 60px;
 }
+
+img {
+  max-height: 150px;
+}
+
 
 
 
