@@ -7,9 +7,11 @@ export default function () {
         <div className="typewriter-container">
             <p className="description">&lt;h1&gt; Hello world! Welcome to type.this! &lt;/h1&gt;</p>
             <p className="description2">&lt;h2&gt; A software engineer's typing game &lt;/h2&gt;</p>
-            <p className="description3">&lt;p&gt; Click Play! &lt;/p&gt;</p>
+            <p className="description3">&lt;p&gt; Click practice! &lt;/p&gt;</p>
             <div className="game-nav">
-                <Link to ="/game">Play</Link>
+                <Link to ="/quotes">practice</Link>
+                <br/>
+                {/* <Link to ="/words">words</Link> */}
             </div>
         </div>
     )

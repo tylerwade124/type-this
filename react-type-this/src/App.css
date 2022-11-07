@@ -75,6 +75,9 @@ body {
   min-height: 100vh;
 }
 
+
+
+
 .description {
   background-color: black;
   position: relative;
@@ -175,7 +178,7 @@ body {
   font-size: clamp(1rem, 2vw + 1rem, 4rem);
   width: max-content;
   color: rgb(7, 220, 7);
-  right: 27.7%;
+  right: 23.2%;
 }
 
 .description3::before,
@@ -192,7 +195,7 @@ body {
 .description3::before {
   background-color: black;
   animation: 
-  typewriter 3s steps(20) forwards;
+  typewriter 3s steps(24) forwards;
   animation-delay: 12s;
 }
 
@@ -200,7 +203,7 @@ body {
   width: .125em;
   background: white;
   animation: 
-  typewriter 3s steps(20) forwards;
+  typewriter 3s steps(24) forwards;
   animation-delay: 12s;
 }
 
@@ -238,6 +241,22 @@ body {
 
 img {
   max-height: 150px;
+}
+
+.new-quote{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  background: white;
+  color: black;
+}
+
+.data-container {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  background: red;
+  color: red;
 }
 
 
