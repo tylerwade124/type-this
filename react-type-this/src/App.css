@@ -332,6 +332,8 @@ img {
 .description-container {
   background: black;
   height: 95%;
+  border-bottom-left-radius: 4%;
+  border-bottom-right-radius: 4%;
 }
 
 
