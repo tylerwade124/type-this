@@ -4,11 +4,11 @@ import useTypingGame from 'react-typing-game-hook'
 import typingSound from './sound/button.wav'
 import resetSound from './sound/beep.wav'
 
-export default function Quote (props) {
+export default function Inspirational (props) {
 
     const [game, setGame] = useState({})
 
-    const text = game.en
+    const text = game.content
 
     const {
         states: { chars, charsState, errorChar, correctChar, startTime, endTime, currIndex, phase },
@@ -21,7 +21,7 @@ export default function Quote (props) {
 
 
 const getData = async() => {
-    await axios.get('https://programming-quotes-api.herokuapp.com/Quotes/random')
+    await axios.get('https://api.quotable.io/random?tags=inspirational')
     .then(res =>  {
         if (res.data) {
             setGame(res.data)
@@ -134,8 +134,6 @@ const adjustedWPM = WPM * (accuracy / 100)
                     } else if (key.length === 1) {
                         insertTyping(key);
                         audio.play()
-                        
-                        console.log(adjustedWPM)
                         
                     }
                         e.preventDefault();

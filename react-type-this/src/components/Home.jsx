@@ -1,17 +1,26 @@
 import { Link } from 'react-router-dom'
 
-import Game from './Game'
 
 export default function () {
     return (
         <div className="typewriter-container">
-            <p className="description">&lt;h1&gt; Hello world! Welcome to type.this! &lt;/h1&gt;</p>
-            <p className="description2">&lt;h2&gt; A software engineer's typing game &lt;/h2&gt;</p>
-            <p className="description3">&lt;p&gt; Click practice! &lt;/p&gt;</p>
+            <p className="description">&lt; Hello world! Welcome to type.this! /&gt;</p>
+            <p className="description2">&lt; Click one of the links /&gt;</p>
+            <p className="description3">&lt; or search for a topic! /&gt;</p>
             <div className="game-nav">
-                <Link to ="/quotes">practice</Link>
+                <Link to ="/technology">Tech</Link>
                 <br/>
-                {/* <Link to ="/words">words</Link> */}
+                <Link to ="/history">History</Link>
+                <br />
+                <Link to ="/sports">Sports</Link>
+                <br />
+                <Link to ="/competition">Competition</Link>
+                <br />
+                <Link to ="/success">Success</Link>
+                <br />
+                <Link to ="/inspirational">Inspirational</Link>
+                <br />
+                <Link to ="/business">Business</Link>
             </div>
         </div>
     )
