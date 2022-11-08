@@ -1,7 +1,7 @@
 # type.this
 A typing game, based off of an API that returns a random quote, determined by which topic you click on the home page. 
 
-# Demo
+## Demo
 https://type-this.netlify.app/technology
 
 ## Rules/Instructions
