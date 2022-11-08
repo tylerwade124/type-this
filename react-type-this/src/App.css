@@ -223,7 +223,7 @@ body {
 }
 
 .typewriter-container {
-  background-color: black;
+  background-color: #656d78;
   border: #656d78;
   border-width: 9px;
   border-style: solid;
@@ -327,6 +327,11 @@ img {
   border-radius: 100%;
   width: 1.3vh;
   background-color: #44CF6C;
+}
+
+.description-container {
+  background: black;
+  height: 95%;
 }
 
 
