@@ -142,7 +142,7 @@ const adjustedWPM = WPM * (accuracy / 100)
                 >
                 {chars.split('').map((char, index) => {
                     let state = charsState[index];
-                    let color = state === 0 ? 'white' : state === 1 ? 'rgb(7, 220, 7)' : 'red';
+                    let color = state === 0 ? '#E6E9ED' : state === 1 ? '#44CF6C' : '#FF4365';
                     return (
                     <span key={char + index} style={{ color }}>
                         {char}

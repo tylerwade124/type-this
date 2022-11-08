@@ -1,13 +1,16 @@
 * {
-  background-color: black;
-  color: lightgrey;
+  background-color: #2D3142;
+  color: #e6e9ed;
   margin: 0 auto;
   padding: 0;
 }
 
+.header {
+  background-color: #2D3142;
+}
 
 .App {
-  text-align: center;
+  background-color: #2D3142;
 }
 
 
@@ -16,20 +19,16 @@
   height: 50px;
   font-size: 39px;
   background-color: azure;
-  color: black;
+  color: #2D3142;
 }
 
-.timer-text {
-  color: red;
-  background-color: rgb(122, 120, 120);
-  font-size: 50px
-}
-button {
-  background-color: rgb(122, 120, 120);
+.footer-text {
+  background-color: #2D3142;
 }
 
-.timer-title { 
-  font-size: 30px;
+
+h1 { 
+  background: #2D3142;
 }
 
 .nav {
@@ -38,32 +37,41 @@ button {
   align-self: center;
 }
 
+.nav-home {
+  background-color: #2D3142;
+}
+
 .words {
   font-family: 'Courier Prime', monospace;
   font-size: 43px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  background: #2D3142;
 }
 
 .title {
+  background-color: #2D3142;
   font-size: 50px;
   display: flex;
 }
 
 .author {
-  color: White;
+  color: #E6E9ED;
   font-size: 25px;
   position: absolute;
   top: 88%;
   left: 50%;
-  transform: translate(-50%, -88%)
+  transform: translate(-50%, -88%);
+  background:#2D3142;
 }
 
 
 
-
+.quote {
+  background-color: #2D3142;
+}
 
 
 
@@ -71,6 +79,7 @@ button {
 
 
 body {
+  background-color: #2D3142;
   font-family: 'Courier Prime', monospace;
   min-height: 100vh;
 }
@@ -82,9 +91,9 @@ body {
   background-color: black;
   position: relative;
   font-family: 'Courier Prime', monospace;
-  font-size: clamp(1rem, 2vw + 1rem, 4rem);
+  font-size: clamp(1rem, 1vw + 1rem, 4rem);
   width: max-content;
-  color: rgb(7, 220, 7);
+  color: #44CF6C;
 }
 
 .description::before,
@@ -101,14 +110,14 @@ body {
 .description::before {
   background-color: black;
   animation: 
-  typewriter 4.2s steps(39) forwards;
+  typewriter 3.5s steps(36) forwards;
 }
 
 .description::after {
   width: .125em;
   background: white;
   animation: 
-  typewriter 4.2s steps(39) forwards;
+  typewriter 3.5s steps(36) forwards;
 }
 
 @keyframes typewriter {
@@ -126,10 +135,9 @@ body {
   background-color: black;
   position: relative;
   font-family: 'Courier Prime', monospace;
-  font-size: clamp(1rem, 2vw + 1rem, 4rem);
+  font-size: clamp(1rem, 1vw + 1rem, 4rem);
   width: max-content;
-  color: rgb(7, 220, 7);
-  right: 15.4%;
+  color: #44CF6C;
 }
 
 .description2::before,
@@ -146,16 +154,16 @@ body {
 .description2::before {
   background-color: black;
   animation: 
-  typewriter 3s steps(27) forwards;
-  animation-delay: 4.3s;
+  typewriter 3.5s steps(36) forwards;
+  animation-delay: 3.6s;
 }
 
 .description2::after {
   width: .125em;
   background: white;
   animation: 
-  typewriter 3s steps(27) forwards;
-  animation-delay: 4.3s;
+  typewriter 3.5s steps(36) forwards;
+  animation-delay: 3.6s;
 }
 
 @keyframes typewriter {
@@ -172,12 +180,13 @@ body {
 
 
 .description3 {
+
   background-color: black;
   position: relative;
   font-family: 'Courier Prime', monospace;
   font-size: clamp(1rem, 2vw + 1rem, 4rem);
   width: max-content;
-  color: rgb(7, 220, 7);
+  color: #44CF6C;
   right: 15.4%;
 }
 
@@ -214,8 +223,14 @@ body {
 }
 
 .typewriter-container {
+  background-color: black;
+  border: #656d78;
+  border-width: 8px;
+  border-style: solid;
+  border-radius: 5%;
   position: absolute;
-  top: 50%;
+  height: 37vh;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%)
 }
@@ -236,19 +251,22 @@ body {
 }
 
 .game-nav {
+  position: absolute;
   font-size: 40px;
+  background: #2D3142;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 10%)
+
+}
+
+.link {
+  background: #2D3142;
 }
 
 img {
+  background-color: #2D3142;
   max-height: 150px;
-}
-
-.new-quote{
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  background: white;
-  color: black;
 }
 
 .data-container {
@@ -257,6 +275,58 @@ img {
   left: 10%;
   background: red;
   color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.terminal-bar {
+  position: relative;
+  background-color: #656d78;
+  height: 2vh;
+
+}
+.terminal-buttons {
+  position: absolute;
+  left: 2%;
+  background-color: #656d78;
+  height: 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ 
+}
+.red {
+  position: relative;
+  height: 1.3vh;
+  border-radius: 100%;
+  width: 1.3vh;
+  background-color: #FF4365;
+}
+.yellow {
+  position: relative;
+  left: 20%;
+  height: 1.3vh;
+  border-radius: 100%;
+  width: 1.3vh;
+  background-color: #ECCB50;
+}
+.green {
+  position: relative;
+  left: 42%;
+  height: 1.3vh;
+  border-radius: 100%;
+  width: 1.3vh;
+  background-color: #44CF6C;
 }
 
 
