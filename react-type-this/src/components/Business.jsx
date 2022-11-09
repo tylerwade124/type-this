@@ -37,12 +37,14 @@ const getData = async() => {
 
 
     const audio = new Audio(typingSound)
+    
     audio.loop = false
-    audio.volume = 0.4
+    audio.volume = 0.2
 
     const audio2 = new Audio(resetSound)
+    
     audio2.loop = false
-    audio2.volume = 0.25
+    audio2.volume = 0.3
 
     //add winners audio on enter key
 
