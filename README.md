@@ -21,6 +21,8 @@ https://coolors.co/2d3142-434a55-e6e9ed-44cf6c-ff4365-eccb50
 
 #### Home page
 https://wireframe.cc/9OHwiu
+###
+<img width="1022" alt="Screen Shot 2022-11-10 at 9 32 52 AM" src="https://user-images.githubusercontent.com/114370648/201118984-2d0815e2-1de6-44f9-a394-a6cddc2f8fe7.png">
 
 #### Typing page
 https://wireframe.cc/jErALz
