@@ -24,9 +24,12 @@ https://wireframe.cc/9OHwiu
 
 #### Typing page
 https://wireframe.cc/jErALz
+
 ###
 <img width="1014" alt="Screen Shot 2022-11-10 at 9 21 10 AM" src="https://user-images.githubusercontent.com/114370648/201116912-8fc7cfd3-ece5-4d8d-a030-908c73549665.png">
 
 ## Component Hierarchy Diagram
 https://app.diagrams.net/#Ltype-this
+###
+<img width="764" alt="Screen Shot 2022-11-10 at 9 29 58 AM" src="https://user-images.githubusercontent.com/114370648/201118315-7fcbb205-7f17-43f4-8538-4cfeb98debcf.png">
 
