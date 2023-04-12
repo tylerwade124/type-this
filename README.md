@@ -1,5 +1,5 @@
 # TypeThis
-TypeThis is a powerful typing application that allows users to measure their typing speed and accuracy in real-time. With the help of advanced algorithms and multiple API calls, TypeThis provides accurate data on your typing performance, including your words per minute (WPM) and accuracy percentage.
+>TypeThis is a powerful typing application that allows users to measure their typing speed and accuracy in real-time. With the help of advanced algorithms and multiple API calls, TypeThis provides accurate data on your typing performance, including your words per minute (WPM) and accuracy percentage.
 
 One of the standout features of TypeThis is the ability to select a topic for the quote, and the application will generate a random quote based on that topic from an API. This feature makes practicing typing more fun and engaging, as users can choose topics that interest them and see how quickly and accurately they can type quotes related to those topics.
 
