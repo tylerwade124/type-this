@@ -8,7 +8,7 @@ TypeThis is built using cutting-edge web technologies, including React and JavaS
 Overall, TypeThis is a powerful tool for anyone looking to improve their typing skills. Whether you're a student, a professional, or just someone who wants to type faster and more accurately, TypeThis has everything you need to achieve your goals. Try it out today and see how it can help you become a better typist!
 
 ## Application Demo
-[Demo](https://pages.github.com/)
+[Demo](https://type-this.netlify.app/technology)
 ![Screen Shot 2022-11-10 at 9 15 44 AM](https://user-images.githubusercontent.com/114370648/201115035-60343dcd-02ab-4e72-b8f6-ae94edf73094.png)
 
 ## Rules/Instructions
