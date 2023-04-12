@@ -1,5 +1,5 @@
 # TypeThis
->TypeThis is a powerful typing application that allows users to measure their typing speed and accuracy in real-time. With the help of advanced algorithms and multiple API calls, TypeThis provides accurate data on your typing performance, including your words per minute (WPM) and accuracy percentage.
+TypeThis is a powerful typing application that allows users to measure their typing speed and accuracy in real-time. With the help of advanced algorithms and multiple API calls, TypeThis provides accurate data on your typing performance, including your words per minute (WPM) and accuracy percentage.
 
 One of the standout features of TypeThis is the ability to select a topic for the quote, and the application will generate a random quote based on that topic from an API. This feature makes practicing typing more fun and engaging, as users can choose topics that interest them and see how quickly and accurately they can type quotes related to those topics.
 
@@ -12,25 +12,25 @@ Overall, TypeThis is a powerful tool for anyone looking to improve their typing 
 ![Screen Shot 2022-11-10 at 9 15 44 AM](https://user-images.githubusercontent.com/114370648/201115035-60343dcd-02ab-4e72-b8f6-ae94edf73094.png)
 
 ## Rules/Instructions
-1. Choose a topic - Select a topic from the dropdown menu to generate a random quote related to that topic.
+1. **Choose a topic** - Select a topic from the dropdown menu to generate a random quote related to that topic.
 
-2. Start typing - Once the quote appears on the screen, start typing it as accurately and quickly as possible.
+2. **Start typing** - Once the quote appears on the screen, start typing it as accurately and quickly as possible.
 
-3. Watch your progress - As you type, the application will keep track of your WPM and accuracy percentage, which will be displayed on the screen.
+3. **Watch your progress** - As you type, the application will keep track of your WPM and accuracy percentage, which will be displayed on the screen.
 
-4. Fix your mistakes - If you make a mistake, the application will highlight it in red. You can go back and fix the mistake by using the backspace key.
+4. **Fix your mistakes** - If you make a mistake, the application will highlight it in red. You can go back and fix the mistake by using the backspace key.
 
-5. Complete the quote - Keep typing until you've completed the entire quote. Once you've finished typing, the application will display your final WPM and accuracy percentage.
+5. **Complete the quote** - Keep typing until you've completed the entire quote. Once you've finished typing, the application will display your final WPM and accuracy percentage.
 
-6. Try again - If you're not satisfied with your performance, you can click the "Try Again" button to generate a new quote and start over.
+6. **Try again** - If you're not satisfied with your performance, you can click the "Try Again" button to generate a new quote and start over.
 
-7. Save your score - You can save your score by clicking the "Save Score" button, which will add your score to the leaderboard. You can also enter your name to personalize your score on the leaderboard.
+7. **Save your score** - You can save your score by clicking the "Save Score" button, which will add your score to the leaderboard. You can also enter your name to personalize your score on the leaderboard.
 
-8. View the leaderboard - Click the "Leaderboard" button to view the scores of other users. You can sort the leaderboard by WPM, accuracy percentage, or date.
+8. **View the leaderboard** - Click the "Leaderboard" button to view the scores of other users. You can sort the leaderboard by WPM, accuracy percentage, or date.
 
-9. Practice regularly - The more you practice, the better you'll become at typing. Try to practice regularly to improve your WPM and accuracy percentage.
+9. **Practice regularly** - The more you practice, the better you'll become at typing. Try to practice regularly to improve your WPM and accuracy percentage.
 
-10. Have fun - Typing can be challenging, but it can also be fun! Choose topics that interest you and enjoy the process of becoming a better typist.
+10. **Have fun** - Typing can be challenging, but it can also be fun! Choose topics that interest you and enjoy the process of becoming a better typist.
 
 ## API Source
 [API](https://api.quotable.io/random)
