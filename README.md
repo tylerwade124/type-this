@@ -9,22 +9,21 @@ Overall, TypeThis is a powerful tool for anyone looking to improve their typing 
 
 ## Planning
 
-### Color Palette
-[coolors.com](https://coolors.co/2d3142-434a55-e6e9ed-44cf6c-ff4365-eccb50)
-
-![Screen Shot 2022-11-08 at 2 26 43 PM](https://user-images.githubusercontent.com/114370648/201114646-7093c3dc-5f8a-4139-a04b-7726e2983761.png)
-
-### Calculations
-
-#### WPM/Accuracy
+### WPM Calculation
 WPM (Words Per Minute) is calculated by taking the total number of words typed, and dividing that number by 5 (4.7 is the average length of an English word). This seems simple at face value, but in this typing application we have to take into account accuracy. The accuracy calculation is a bit more complicated. In this application, we take the total number of correct characters, divided by your current index within the quote (what total character number you are at within the quote), multiplied by 100. We then take the accuracy calculation, divide it by 100, and multiply it by the original WPM calculation (total number of words / 5). This gives us our final WPM value, that is used in the application to give the user an accurate reading of their WPM.
 
 ```
 Adjusted WPM = Total WPM * (Accuracy / 100)
 ```
 
-#### Elapsed Time
-Elapsed time is simply calculated by subtracting the users start time from their end time.
+### Color Palette
+- ![#2D3142](https://placehold.co/15x15/2D3142/2D3142.png) `2D3142` , `RGB: 45, 49, 66`, `Space Cadet`
+- ![#434A55](https://placehold.co/15x15/434A55/434A55.png) `434A55` , `RGB: 67, 74, 85`, `Charcoal`
+- ![#E6E9ED](https://placehold.co/15x15/E6E9ED/E6E9ED.png) `E6E9ED` , `RGB: 230, 233, 237`, `Cultured`
+- ![#44CF6](https://placehold.co/15x15/E6E9ED/E6E9ED.png) `E6E9ED` , `RGB: 230, 233, 237`, `Emerald`
+- ![#FF4365](https://placehold.co/15x15/FF4365/FF4365.png) `FF4365` , `RGB: 255, 67, 101`, `Radical Red`
+- ![#ECCB50](https://placehold.co/15x15/FF4365/FF4365.png) `ECCB50` , `RGB: 236, 203, 80`, `Maize Crayola`
+
 
 ### WireFrames
 
