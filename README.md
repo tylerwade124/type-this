@@ -29,10 +29,9 @@ Adjusted WPM = Total WPM * (Accuracy / 100)
 
 ### WireFrames
 [Home Page](https://wireframe.cc/9OHwiu)
-<img width="1022" alt="Screen Shot 2022-11-10 at 9 32 52 AM" src="https://user-images.githubusercontent.com/114370648/201118984-2d0815e2-1de6-44f9-a394-a6cddc2f8fe7.png">
-
+![Screen Shot 2023-05-16 at 12 24 37 PM](https://github.com/tylerwade124/type-this/assets/114370648/671bf14d-746f-4303-ad4f-26b607496820)
 [Typing Page](https://wireframe.cc/jErALz)
-<img width="1014" alt="Screen Shot 2022-11-10 at 9 21 10 AM" src="https://user-images.githubusercontent.com/114370648/201116912-8fc7cfd3-ece5-4d8d-a030-908c73549665.png">
+![Screen Shot 2023-05-16 at 12 27 53 PM](https://github.com/tylerwade124/type-this/assets/114370648/ab03a013-7d35-4133-9b78-ff9e9e9a331f)
 
 [Component Hierarchy Diagram](https://app.diagrams.net/#Ltype-this)
 <img width="764" alt="Screen Shot 2022-11-10 at 9 29 58 AM" src="https://user-images.githubusercontent.com/114370648/201118315-7fcbb205-7f17-43f4-8538-4cfeb98debcf.png">
