@@ -22,6 +22,7 @@ Adjusted WPM = Total WPM * (Accuracy / 100)
 - ![#e6e9eD](https://placehold.co/15x15/E6E9ED/E6E9ED.png) `E6E9ED` , `RGB: 230, 233, 237`, `Anti-flash White`
 - ![#ff4365](https://placehold.co/15x15/FF4365/FF4365.png) `FF4365` , `RGB: 255, 67, 101`, `Folly`
 - ![#50C878](https://placehold.co/15x15/50C878/50C878.png) `50C878` , `RGB: 80, 200, 120`, `Emerald`
+- ![#eccb50](https://placehold.co/15x15/eccb50/eccb50.png) `50C878` , `RGB: 236, 203, 80`, `Naples Yellow`
 
 
 
