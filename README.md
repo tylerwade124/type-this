@@ -11,24 +11,35 @@ Overall, TypeThis is a powerful tool for anyone looking to improve their typing 
 
 ### Color Palette
 [coolors.com](https://coolors.co/2d3142-434a55-e6e9ed-44cf6c-ff4365-eccb50)
-####
+
 ![Screen Shot 2022-11-08 at 2 26 43 PM](https://user-images.githubusercontent.com/114370648/201114646-7093c3dc-5f8a-4139-a04b-7726e2983761.png)
+
+### Calculations
+
+#### WPM/Accuracy
+WPM (Words Per Minute) is calculated by taking the total number of words typed, and dividing that number by 5 (4.7 is the average length of an English word). This seems simple at face value, but in this typing application we have to take into account accuracy. The accuracy calculation is a bit more complicated. In this application, we take the total number of correct characters, divided by your current index within the quote (what total character number you are at within the quote), multiplied by 100. We then take the accuracy calculation, divide it by 100, and multiply it by the original WPM calculation (total number of words / 5). This gives us our final WPM value, that is used in the application to give the user an accurate reading of their WPM.
+
+```
+Adjusted WPM = Total WPM * (Accuracy / 100)
+```
+
+#### Elapsed Time
+Elapsed time is simply calculated by subtracting the users start time from their end time.
 
 ### WireFrames
 
 [Home Page](https://wireframe.cc/9OHwiu)
-###
+
 <img width="1022" alt="Screen Shot 2022-11-10 at 9 32 52 AM" src="https://user-images.githubusercontent.com/114370648/201118984-2d0815e2-1de6-44f9-a394-a6cddc2f8fe7.png">
 
 
 [Typing Page](https://wireframe.cc/jErALz)
 
-###
 <img width="1014" alt="Screen Shot 2022-11-10 at 9 21 10 AM" src="https://user-images.githubusercontent.com/114370648/201116912-8fc7cfd3-ece5-4d8d-a030-908c73549665.png">
 
 
 [Component Hierarchy Diagram](https://app.diagrams.net/#Ltype-this)
-###
+
 <img width="764" alt="Screen Shot 2022-11-10 at 9 29 58 AM" src="https://user-images.githubusercontent.com/114370648/201118315-7fcbb205-7f17-43f4-8538-4cfeb98debcf.png">
 
 ## Application Overview
