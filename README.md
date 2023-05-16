@@ -13,7 +13,7 @@ Overall, TypeThis is a powerful tool for anyone looking to improve their typing 
 
 
 ### WPM Calculation
-WPM (Words Per Minute) is calculated by taking the total number of words typed, and dividing that number by 5 (4.7 is the average length of an English word). This seems simple at face value, but in this typing application we have to take into account accuracy. The accuracy calculation is a bit more complicated. In this application, we take the total number of correct characters, divided by your current index within the quote (what total character number you are at within the quote), multiplied by 100. We then take the accuracy calculation, divide it by 100, and multiply it by the original WPM calculation (total number of words / 5). This gives us our final WPM value, that is used in the application to give the user an accurate reading of their WPM.
+WPM (Words Per Minute) is calculated by taking the total number of words typed, and dividing that number by 5 (4.7 is the average length of an English word). This seems simple at face value, but in this typing application we have to take into account accuracy. The accuracy calculation is a bit more complicated. In this instance, we take the total number of correct characters, divided by your current index within the quote (what total character number you are at within the quote), multiplied by 100. We then take the accuracy calculation, divide it by 100, and multiply it by the original WPM calculation (total number of words / 5). This gives us our final WPM value, that is used in the application to give the user an accurate reading of their WPM.
 
 ```
 Adjusted WPM = Total WPM * (Accuracy / 100)
@@ -42,8 +42,10 @@ Adjusted WPM = Total WPM * (Accuracy / 100)
 [Demo](https://type-this.netlify.app)
 ### Pages
 *Home Page*
+
 ![Screen Shot 2022-11-10 at 9 15 44 AM](https://user-images.githubusercontent.com/114370648/201115035-60343dcd-02ab-4e72-b8f6-ae94edf73094.png)
 *Test / Results Page*
+
 ![Screen Shot 2023-05-16 at 12 16 14 PM](https://github.com/tylerwade124/type-this/assets/114370648/181e543c-8231-41a2-8249-cb80ba5c31ce)
 ![Screen Shot 2023-05-16 at 12 17 26 PM](https://github.com/tylerwade124/type-this/assets/114370648/3bb00dee-42ab-4ef2-8d3b-4985d250a161)
 
