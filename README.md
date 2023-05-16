@@ -29,8 +29,11 @@ Adjusted WPM = Total WPM * (Accuracy / 100)
 
 ### WireFrames
 [Home Page](https://wireframe.cc/9OHwiu)
+
 ![Screen Shot 2023-05-16 at 12 24 37 PM](https://github.com/tylerwade124/type-this/assets/114370648/671bf14d-746f-4303-ad4f-26b607496820)
+
 [Typing Page](https://wireframe.cc/jErALz)
+
 ![Screen Shot 2023-05-16 at 12 27 53 PM](https://github.com/tylerwade124/type-this/assets/114370648/ab03a013-7d35-4133-9b78-ff9e9e9a331f)
 
 [Component Hierarchy Diagram](https://app.diagrams.net/#Ltype-this)
