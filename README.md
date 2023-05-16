@@ -17,12 +17,12 @@ Adjusted WPM = Total WPM * (Accuracy / 100)
 ```
 
 ### Color Palette
-- ![#2d3142](https://placehold.co/15x15/2D3142/2D3142.png) `2D3142` , `RGB: 45, 49, 66`, `Gunmetal`
-- ![#434a55](https://placehold.co/15x15/434A55/434A55.png) `434A55` , `RGB: 67, 74, 85`, `Charcoal`
-- ![#e6e9eD](https://placehold.co/15x15/E6E9ED/E6E9ED.png) `E6E9ED` , `RGB: 230, 233, 237`, `Anti-flash White`
-- ![#ff4365](https://placehold.co/15x15/FF4365/FF4365.png) `FF4365` , `RGB: 255, 67, 101`, `Folly`
-- ![#50C878](https://placehold.co/15x15/50C878/50C878.png) `50C878` , `RGB: 80, 200, 120`, `Emerald`
-- ![#eccb50](https://placehold.co/15x15/eccb50/eccb50.png) `50C878` , `RGB: 236, 203, 80`, `Naples Yellow`
+- ![#2d3142](https://placehold.co/15x15/2D3142/2D3142.png) `Gunmetal`, `2D3142` , `RGB: 45, 49, 66`, 
+- ![#434a55](https://placehold.co/15x15/434A55/434A55.png) `Charcoal`, `434A55` , `RGB: 67, 74, 85`
+- ![#e6e9eD](https://placehold.co/15x15/E6E9ED/E6E9ED.png) `Anti-flash White` , `E6E9ED` , `RGB: 230, 233, 237`
+- ![#ff4365](https://placehold.co/15x15/FF4365/FF4365.png) `Folly`, `FF4365` , `RGB: 255, 67, 101`
+- ![#50C878](https://placehold.co/15x15/50C878/50C878.png) `Emerald` , `50C878` , `RGB: 80, 200, 120`
+- ![#eccb50](https://placehold.co/15x15/eccb50/eccb50.png) `Naples Yellow`, `50C878` , `RGB: 236, 203, 80`
 
 
 
