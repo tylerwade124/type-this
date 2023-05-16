@@ -17,12 +17,12 @@ Adjusted WPM = Total WPM * (Accuracy / 100)
 ```
 
 ### Color Palette
-- ![#2D3142](https://placehold.co/15x15/2D3142/2D3142.png) `2D3142` , `RGB: 45, 49, 66`, `Space Cadet`
+- ![#2D3142](https://placehold.co/15x15/2D3142/2D3142.png) `2D3142` , `RGB: 45, 49, 66`, `Gunmetal`
 - ![#434A55](https://placehold.co/15x15/434A55/434A55.png) `434A55` , `RGB: 67, 74, 85`, `Charcoal`
-- ![#E6E9ED](https://placehold.co/15x15/E6E9ED/E6E9ED.png) `E6E9ED` , `RGB: 230, 233, 237`, `Cultured`
-- ![#44CF6](https://placehold.co/15x15/E6E9ED/E6E9ED.png) `E6E9ED` , `RGB: 230, 233, 237`, `Emerald`
-- ![#FF4365](https://placehold.co/15x15/FF4365/FF4365.png) `FF4365` , `RGB: 255, 67, 101`, `Radical Red`
-- ![#ECCB50](https://placehold.co/15x15/FF4365/FF4365.png) `ECCB50` , `RGB: 236, 203, 80`, `Maize Crayola`
+- ![#E6E9ED](https://placehold.co/15x15/E6E9ED/E6E9ED.png) `E6E9ED` , `RGB: 230, 233, 237`, `Anti-flash White`
+- ![#44CF6C](https://placehold.co/15x15/E6E9ED/E6E9ED.png) `44CF6C` , `RGB: 230, 233, 237`, `Emerald`
+- ![#FF4365](https://placehold.co/15x15/FF4365/FF4365.png) `FF4365` , `RGB: 255, 67, 101`, `Folly`
+- ![#ECCB50](https://placehold.co/15x15/FF4365/FF4365.png) `ECCB50` , `RGB: 236, 203, 80`, `Naples Yellow`
 
 
 ### WireFrames
