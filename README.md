@@ -46,6 +46,9 @@ Adjusted WPM = Total WPM * (Accuracy / 100)
 *Test / Results Page*
 ![Screen Shot 2023-05-16 at 12 16 14 PM](https://github.com/tylerwade124/type-this/assets/114370648/181e543c-8231-41a2-8249-cb80ba5c31ce)
 ![Screen Shot 2023-05-16 at 12 17 26 PM](https://github.com/tylerwade124/type-this/assets/114370648/3bb00dee-42ab-4ef2-8d3b-4985d250a161)
+```
+When you make errors while typing the quote, you are allowed to continue without correcting the error, this will correct itself in the final WPM calculation. You can also see where exactly you made the errors, as seen in the images above.
+```
 
 ### Rules/Instructions
 1. **Choose a topic** - Select a topic from the home page to generate a random quote related to that topic.
