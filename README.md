@@ -37,6 +37,7 @@ Adjusted WPM = Total WPM * (Accuracy / 100)
 ![Screen Shot 2023-05-16 at 12 27 53 PM](https://github.com/tylerwade124/type-this/assets/114370648/ab03a013-7d35-4133-9b78-ff9e9e9a331f)
 
 [Component Hierarchy Diagram](https://app.diagrams.net/#Ltype-this)
+
 <img width="764" alt="Screen Shot 2022-11-10 at 9 29 58 AM" src="https://user-images.githubusercontent.com/114370648/201118315-7fcbb205-7f17-43f4-8538-4cfeb98debcf.png">
 
 
