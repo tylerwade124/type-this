@@ -42,12 +42,12 @@ Adjusted WPM = Total WPM * (Accuracy / 100)
 ## Application Overview
 [Demo](https://type-this.netlify.app)
 ### Pages
-![Screen Shot 2022-11-10 at 9 15 44 AM](https://user-images.githubusercontent.com/114370648/201115035-60343dcd-02ab-4e72-b8f6-ae94edf73094.png)
 *Home Page*
-![Screen Shot 2023-05-16 at 12 16 14 PM](https://github.com/tylerwade124/type-this/assets/114370648/181e543c-8231-41a2-8249-cb80ba5c31ce)
+![Screen Shot 2022-11-10 at 9 15 44 AM](https://user-images.githubusercontent.com/114370648/201115035-60343dcd-02ab-4e72-b8f6-ae94edf73094.png)
 *Test Page*
-![Screen Shot 2023-05-16 at 12 17 26 PM](https://github.com/tylerwade124/type-this/assets/114370648/3bb00dee-42ab-4ef2-8d3b-4985d250a161)
+![Screen Shot 2023-05-16 at 12 16 14 PM](https://github.com/tylerwade124/type-this/assets/114370648/181e543c-8231-41a2-8249-cb80ba5c31ce)
 *Results Page*
+![Screen Shot 2023-05-16 at 12 17 26 PM](https://github.com/tylerwade124/type-this/assets/114370648/3bb00dee-42ab-4ef2-8d3b-4985d250a161)
 
 ### Rules/Instructions
 1. **Choose a topic** - Select a topic from the home page to generate a random quote related to that topic.
